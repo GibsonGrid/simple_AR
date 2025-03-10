@@ -18,20 +18,20 @@ Information regarding bonus task is specified in `bonus.ipynb`.
 Instructions for homework are presented in `hw.ipynb`.
 
 ## Summary
-In this study, computer vision toy examples for AR applications are presented.
+In this study, methodology for toy examples in AR applications using computer vision are presented.
 
 <div style="text-align: center;">
     <video width="100%" height="100%" controls>
-        <source src="./utils/video.mov">
+        <source src="./utils/5_AR_video_plane_demo.mov">
     </video>
-    <p>Projected model of cube, video from file on side of the cube and rea-time feed from web-camera on plane perpendicuar to marker plane</p>
+    <p>Projected model of cube, video from file on side of the cube and real-time feed from web-camera on plane perpendicuar to marker plane</p>
 </div>
 
 
 
 <div style="text-align: center;">
     <video width="100%" height="100%" controls>
-        <source src="./utils/video.mov">
+        <source src="./utils/6_bonus_demo.mov">
     </video>
     <p>Animated .obj model of spider-man making flair on aruco marker</p>
 </div>
