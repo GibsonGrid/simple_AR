@@ -22,7 +22,7 @@ In this study, methodology for toy examples in AR applications using computer vi
 
 <div style="text-align: center;">
     <video width="100%" height="100%" controls>
-        <source src="./utils/5_AR_video_plane_demo.mov">
+        <source src="./utils/5_AR_video_plane_demo.mp4">
     </video>
     <p>Projected model of cube, video from file on side of the cube and real-time feed from web-camera on plane perpendicuar to marker plane</p>
 </div>
@@ -31,7 +31,7 @@ In this study, methodology for toy examples in AR applications using computer vi
 
 <div style="text-align: center;">
     <video width="100%" height="100%" controls>
-        <source src="./utils/6_bonus_demo.mov">
+        <source src="./utils/6_bonus_demo.mp4">
     </video>
     <p>Animated .obj model of spider-man making flair on aruco marker</p>
 </div>
