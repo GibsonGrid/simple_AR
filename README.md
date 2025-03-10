@@ -21,18 +21,12 @@ Instructions for homework are presented in `hw.ipynb`.
 In this study, methodology for toy examples in AR applications using computer vision are presented.
 
 <div style="text-align: center;">
-    <video width="100%" height="100%" controls>
-        <source src="./utils/5_AR_video_plane_demo.mp4">
-    </video>
+    <img src="./utils/5_AR_video_plane_demo.gif" width="100%" height="100%">
     <p>Projected model of cube, video from file on side of the cube and real-time feed from web-camera on plane perpendicuar to marker plane</p>
 </div>
 
-
-
 <div style="text-align: center;">
-    <video width="100%" height="100%" controls>
-        <source src="./utils/6_bonus_demo.mp4">
-    </video>
+    <img src="./utils/6_bonus_demo.gif" width="100%" height="100%">
     <p>Animated .obj model of spider-man making flair on aruco marker</p>
 </div>
 
