@@ -89,7 +89,7 @@ while cap.isOpened():
             # Get transfromation matrix using cv2.getPerspectiveTransform
             ### DO NOT DELETE THIS ###
             ### your code is here ###
-            M_offset = cv2.getPerspectiveTransform()
+            M_offset = None
             ### your code is here ###
             ### DO NOT DELETE THIS ###
 
@@ -97,7 +97,7 @@ while cap.isOpened():
             warped_video_offset = cv2.warpPerspective(
                 video_resized, M_offset, (frame.shape[1], frame.shape[0]))
             cv2.imwrite('.utils/show.png', warped_video_offset)
-            frame = cv2.addWeighted(frame, 1, warped_video_offset, 1, 0)
+            # frame = cv2.addWeighted(frame, 1, warped_video_offset, 1, 0)
 
             # Non-transparent video
             # mask_original = np.ones(

@@ -3,7 +3,7 @@ from pynput import keyboard
 import matplotlib.pyplot as plt
 
 # Use direct show flag if on Windows: cv2.CAP_DSHOW
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 # Define resolution of your web-camera
 width = 1920
@@ -40,7 +40,6 @@ while cap.isOpened():
         img, (img.shape[1]//scale, img.shape[0]//scale)))
     cv2.waitKey(1)
 
-    
     if save:
         # Save images (.png, 300 dpi) in calib_images folder using plt.imsave
         plt.imsave(f'./data/calibration/calib_images/' + str(num) + '.png',

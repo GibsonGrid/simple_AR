@@ -24,7 +24,7 @@ cube_faces = {
     "right": np.float32([[half, -half, 0], [half, half, 0], [half, half, cube_size], [half, -half, cube_size]])
 }
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 # Define resolution of your web-camera
 width = 1920
@@ -56,7 +56,7 @@ while cap.isOpened():
         break
 
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    corners, ids, _ = cv2.aruco.detectMarkers()
+    corners, ids, _ = cv2.aruco.detectMarkers(gray, aruco_dict, parameters=parameters)
 
     if ids is not None:
         ids = ids.flatten()
@@ -64,7 +64,7 @@ while cap.isOpened():
             # Estimate marker pose using cv2.aruco.estimatePoseSingleMarkers
             ### DO NOT DELETE THIS ###
             ### your code is here ###
-            cv2.aruco.estimatePoseSingleMarkers()
+            pass
             ### your code is here ###
             ### DO NOT DELETE THIS ###
 
@@ -79,7 +79,7 @@ while cap.isOpened():
             cv2.line(frame, bottomRight, bottomLeft, (0, 255, 0), 2)
             cv2.line(frame, bottomLeft, topLeft, (0, 255, 0), 2)
 
-            # Project cube faces on marker using cv2.getPerspectiveTransform and cv2.warpPerspective
+            # Project cube faces on marker using cv2.projectPoints
             ### DO NOT DELETE THIS ###
             ### your code is here ###
             pass

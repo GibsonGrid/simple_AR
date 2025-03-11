@@ -5,7 +5,7 @@ from pynput import keyboard
 aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_50)
 parameters = cv2.aruco.DetectorParameters_create()
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 # Define resolution of your web-camera
 width = 1920
@@ -40,7 +40,7 @@ while cap.isOpened():
     ### DO NOT DELETE THIS ###
     ### your code is here ###
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    cv2.aruco.detectMarkers()
+    corners = None
     ### your code is here ###
     ### DO NOT DELETE THIS ###
 
@@ -51,7 +51,6 @@ while cap.isOpened():
             # Make sure that corners are in integer
             ### DO NOT DELETE THIS ###
             ### your code is here ###
-            corners= None
             pass
             ### your code is here ###
             ### DO NOT DELETE THIS ###
