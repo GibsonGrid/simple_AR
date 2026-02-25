@@ -9,7 +9,7 @@ dist_coeffs = np.array(cv_file.getNode('dist').mat(), dtype=np.float64)
 cv_file.release()
 
 aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_50)
-parameters = cv2.aruco.DetectorParameters_create()
+parameters = cv2.aruco.DetectorParameters()
 
 cube_size = 1
 

@@ -10,7 +10,7 @@ dist_coeffs = np.array(cv_file.getNode('dist').mat(), dtype=np.float64)
 cv_file.release()
 
 aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_50)
-parameters = cv2.aruco.DetectorParameters_create()
+parameters = cv2.aruco.DetectorParameters()
 
 # Define cube model
 cube_size = 1
@@ -66,7 +66,7 @@ while cap.isOpened():
             ### your code is here ###
             pass
             ### your code is here ###
-            ### DO NOT DELETE THIS ###
+            ### DO NOT DELETE THIS ### 
 
             # Extract the marker corners (which are always returned in top-left, top-right, bottom-right, and bottom-left order)
             # Make sure that corners are in integer

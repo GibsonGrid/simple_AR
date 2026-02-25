@@ -3,7 +3,7 @@ import numpy as np
 from pynput import keyboard
 
 aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_50)
-parameters = cv2.aruco.DetectorParameters_create()
+parameters = cv2.aruco.DetectorParameters()
 
 cap = cv2.VideoCapture(0)
 
