@@ -3,7 +3,7 @@ from pynput import keyboard
 import matplotlib.pyplot as plt
 
 # Use direct show flag if on Windows: cv2.CAP_DSHOW
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 # Define resolution of your web-camera
 width = 1920

@@ -37,7 +37,7 @@ for img in images:
         # Draw and display the corners with index of each corner
         ### DO NOT DELETE THIS ###
         ### your code is here ###
-        pass
+        cv2.drawChessboardCorners(img, pattern_size, corners, ret)
         cv2.imshow('Img', img)
         cv2.waitKey(0)
         ### your code is here ###
